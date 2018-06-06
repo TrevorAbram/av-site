@@ -14,8 +14,20 @@
  @import 'sass'
  */
 
+p {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+
+}
+
+
 .hero-title {
-  font-family: Nunito Sans;
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -38,6 +50,11 @@
 .hero-block {
   padding: 200px 0px;
   background-color: linear-gradient(0deg, rgba(33, 37, 41, 0.52), rgba(33, 37, 41, 0.52));
+  // background-image: image('intro-bg.jpg');
+  background-image: url('intro-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
@@ -65,7 +82,7 @@
 
 .section-title {
   padding-bottom: 50px;
-  font-family: Nunito Sans;
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -94,15 +111,40 @@
 .service-square {
   width: auto;
   height: 200px;
-  background-color: blue;
+  background-color: #8a8a8a;
   position: relative;
   display: block;
+}
+
+.service-square-title {
+  display: inline-block;
+  position: relative;
+  left: 15px;
+
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+
 }
 
 .service-info-block {
   width: auto;
   position: relative;
   display: block;
+  color: white;
+
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  padding-top: 10px;
 }
 
 .col-3 {
