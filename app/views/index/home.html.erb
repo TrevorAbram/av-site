@@ -7,16 +7,16 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Agency</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#">Work</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -26,7 +26,7 @@
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+        </div> -->
       </li>
     </ul>
   </div>
@@ -36,8 +36,9 @@
 <!-- HERO -->
 <div class="jumbotron jumbotron-fluid hero-block">
   <div class="container">
-    <h1 class="display-4 hero-title">Abram ventures is your digital advertising agency. It’s our job to help brands stand out.</h1>
-    <a class="btn btn-outline" href="/">Contact Us</a>
+    <h1 class="display-4 hero-title">Abram ventures is your digital advertising agency.
+      <br>It’s our job to help brands stand out.</h1>
+    <a class="btn btn-outline" href="mailto:trevor@abramventures.com?subject=Project%20Inquiry">Contact Us</a>
   </div>
 </div>
 
@@ -74,23 +75,25 @@
 <!-- COMING SOON INFO -->
 <section class="section section-md bg-light">
   <div class="container">
-    <h2 class="display-6 lead">Good things come to those who wait</h2>
-    <p>Our new site is coming soon. In the mean time, we're busy creating value for brands like you.</p>
+    <h2 class="section-title">Good things come to those who wait</h2>
+    <p>Our new site is coming soon. In the mean time, we're busy creating value for brands like you.
+        <br>Once we launch, expect to see a lot more from us.</p>
+    <a href="#founder-message">Learn more from our founder</a>
 
   </div>
 </section>
 
 <!-- Specializations -->
-<section class=" section section-md section-dark">
+<section class=" section section-md section-dark" id="Specializations">
   <div class="container">
     <h3 class="section-title title-white">Specializations</h3>
 
     <div class="flex-row">
 
       <div class="col-3">
-        <div class="service-square">
-          <h4 class="service-square-title">Social Media Strategy</h4>
-          <p>Increase awareness</p>
+        <div class="service-square" id="s-one">
+          <h4 class="service-square-title title-white">Social Media Strategy</h4>
+          <p class="service-square-subtitle">Increase awareness</p>
         </div>
 
         <div class="service-info-block">
@@ -99,24 +102,24 @@
       </div>
 
       <div class="col-3">
-        <div class="service-square">
-          <h4 class="service-square-title">Paid Media Strategy<h4>
-          <p>Increase awareness</p>
+        <div class="service-square" id="s-two">
+          <h4 class="service-square-title title-white">Paid Media Strategy<h4>
+          <p class="service-square-subtitle">Drive awareness</p>
         </div>
 
         <div class="service-info-block">
-          <p>The building blocks of what make your brand your own. People want to know you, follow you, and grow with you. They can only do that if they can find you first.</p>
+          <p>It's always more than just ads. We do a deep dive into your company to create and implement a creative strategy that meets the milestones you set. Creatively, we help you become known. More than ever.</p>
         </div>
       </div>
 
       <div class="col-3">
-        <div class="service-square">
-          <h4 class="service-square-title"><h4>
-          <p>Increase awareness</p>
+        <div class="service-square" id="s-three">
+          <h4 class="service-square-title title-white">Web Development<h4>
+          <p class="service-square-subtitle"> A True Digital Experience</p>
         </div>
 
         <div class="service-info-block">
-          <p>The building blocks of what make your brand your own. People want to know you, follow you, and grow with you. They can only do that if they can find you first.</p>
+          <p>Technology is powering both the online and offline worlds we work, play, and live in. From custom applications to strategic site designs, Abram Ventures will design, code, and measure your brand digitally.<p>
         </div>
 
       </div>
@@ -128,8 +131,7 @@
 
 
 <!--  Message from our founder -->
-
-<section class="section section-md">
+<section class="section section-md" id="founder-message">
   <div class="container">
     <h3 class="section-title">A Message From Our Founder</h3>
 
@@ -163,11 +165,41 @@
       </div>
 
       <div class="col-3">
+        <div class="founder-image-two">
+          <%= image_tag("/assets/hand-imga.jpg",  alt: "image of a hand", style: " height: 319px; width: 100%;") %>
+        </div>
 
       </div>
-
     </div>
 
   </div>
 
 </section>
+
+<section class="section section-md bg-light">
+  <div class="container center">
+      <h3 class="section-title">That's enough copy right?</h3>
+      <a class="btn btn-primary"href="mailto:trevor@abramventures.com?subject=Project%20Inquiry">Work With Us</a>
+  </div>
+</section>
+<footer class="section section-md">
+<div class="container">
+  <!-- <div class="flex-row">
+    <div class="col-4">
+      <h4>It's Us.</h4>
+
+    </div>
+
+    <div class="col-4">
+      <h4>Social</h4>
+
+    </div>
+
+  </div> -->
+  <h5  class="footer-title" style="display: block; ">Copyright 2018 Abram Ventures - A Dallas Digital Ad Agency. (New site coming soon.)</h5>
+  <h5 class="footer-title">
+    <a class="footer-link" href="https://instagram.com/abramventures" target="_blank">Instagram</a>
+    <a class="footer-link" href="https://facebook.com/abramventures" target="_blank">Facebook</a>
+  </h5>
+</div>
+</footer>
