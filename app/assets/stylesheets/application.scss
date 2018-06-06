@@ -1,0 +1,110 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ @import ‘bootstrap’
+ @import 'sass'
+ */
+
+.hero-title {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 40px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  padding-bottom: 70px;
+  color: white;
+}
+
+.btn.btn-outline {
+  border: 2px solid #FF8279;
+  padding: 18px 45px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 14px;
+  border-radius: 0px;
+}
+
+.hero-block {
+  padding: 200px 0px;
+  background-color: linear-gradient(0deg, rgba(33, 37, 41, 0.52), rgba(33, 37, 41, 0.52));
+
+}
+
+.jumbotron.jumbotron-fluid.hero-block {
+  margin-bottom: 0px;
+}
+
+
+.section {
+  padding: 100px 0px;
+}
+
+.section.section-md {
+  padding: 75px 0px;
+}
+
+.section-dark {
+  background-color: #212529;
+}
+
+.title-white {
+  color: white;
+}
+
+
+.section-title {
+  padding-bottom: 50px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  display: block;
+
+}
+
+.flex-row{
+  display: flex;
+  flex: auto;
+  flex: 1;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.work-square {
+  width: auto;
+  height: 275px;
+  background-color: grey;
+  position: relative;
+}
+
+.service-square {
+  width: auto;
+  height: 200px;
+  background-color: blue;
+  position: relative;
+  display: block;
+}
+
+.service-info-block {
+  width: auto;
+  position: relative;
+  display: block;
+}
+
+.col-3 {
+  padding: 0px;
+}
